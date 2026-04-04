@@ -1,3 +1,6 @@
+// Problema: Filtro y Orden de Productos de una Tienda Online
+
+
 const productos = [
   { nombre: "Camiseta", precio: 15, categoria: "Ropa" },
   { nombre: "Laptop", precio: 800, categoria: "Electrónica" },
