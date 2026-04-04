@@ -2,7 +2,7 @@
 
 const invitados = ["Ana", "Carlos", "Cecilia", "Daniel", "Diana", "Eduardo"];
 
-function encontrarPareja(arr) {
+const encontrarPareja=(arr) =>{
     let inicio = 0;
     let siguiente = 1;
 
