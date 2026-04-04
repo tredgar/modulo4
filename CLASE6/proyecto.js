@@ -1,4 +1,4 @@
-//
+//Buscar un objeto en una lista de regalos
 // Lista de regalos
 const gifts = ["Muñeca", "Carro de juguete", "Rompecabezas", "Lego", "Pelota"];
 
