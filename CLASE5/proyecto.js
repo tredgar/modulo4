@@ -1,25 +1,19 @@
-function maxSumaConsecutiva(arr, k) {
-  let maxSuma = 0;
-  let sumaActual = 0;
+//encontrar la palabra mas larga  de un texto
 
-  // Paso 1: Calcula la suma inicial para los primeros 'k' elementos
-  for (let i = 0; i < k; i++) {
-    sumaActual += arr[i];
-    console.log(`Suma actual después de agregar ${arr[i]}: ${sumaActual}`);
-  }
+const findLongestWord = (text) => {
+    const words=text.split(' ');
+    let longestWord = '';
+    for (let i = 0; i < words.length; i++) {
+      // Obtenemos la palabra actual de la posición del ciclo
+      let currentWord = words[i];
 
-  maxSuma = sumaActual;
-
-  // Paso 2: Desliza la ventana a lo largo del arreglo
-  for (let i = k; i < arr.length; i++) {
-    sumaActual += arr[i] - arr[i - k]; // Agrega el nuevo elemento y elimina el primero
-    console.log(
-      `Suma actual después de agregar ${arr[i]} y eliminar ${arr[i - k]}: ${sumaActual}`,
-    );
-    maxSuma = Math.max(maxSuma, sumaActual); // Actualiza el máximo si es necesario
-  }
-
-  return maxSuma;
+      // Comparar la longitud de la palabra actual con la más larga guardada
+      if (currentWord.length > longestWord.length) {
+        //Actualizar la palabra más larga si la actual la supera
+        longestWord = currentWord;
+      }
+    }
+    return longestWord;
 }
-
-console.log(maxSumaConsecutiva([2, 1, 5, 1, 3, 2], 3));
+const text= "JavaScript es un lenguaje de programación poderoso"
+console.log(findLongestWord(text));
