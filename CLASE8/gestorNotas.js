@@ -98,3 +98,12 @@ switch (comando) {
     console.log('  node gestorNotas.js eliminar "Título"');
     break;
 }
+
+// CREAR UNA NOTA 
+// node gestorNotas.js crear "Recordatorios" "Comprar café y revisar el código de producción"
+
+// LISTAR NOTAS
+// node gestorNotas.js listar
+
+// ELIMINAR UNA NOTA
+//node gestorNotas.js eliminar "Recordatorios"
